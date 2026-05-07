@@ -1,0 +1,142 @@
+# ============================================================
+# SEGURANÇA — Nunca versionar credenciais ou dados sensíveis
+# ============================================================
+
+# Variáveis de ambiente e configurações secretas
+.env
+.env.*
+*.env
+!.env.example
+
+# Chaves e certificados
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+*.crt
+*.der
+*.pkcs12
+*.jks
+*.keystore
+id_rsa
+id_ed25519
+id_ecdsa
+id_dsa
+*.pub
+
+# Tokens e credenciais em arquivos de configuração
+secrets.json
+secrets.yaml
+secrets.yml
+credentials.json
+credentials.yaml
+credentials.yml
+config/secrets.*
+.netrc
+.htpasswd
+
+# AWS / Cloud credentials
+.aws/
+.azure/
+.gcp/
+gcp-credentials.json
+terraform.tfvars
+*.tfstate
+*.tfstate.backup
+
+# ============================================================
+# Git
+# ============================================================
+
+.git/
+*.orig
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+MERGE_HEAD
+MERGE_MSG
+COMMIT_EDITMSG
+FETCH_HEAD
+ORIG_HEAD
+packed-refs
+.git/hooks/
+.git/info/exclude
+
+# ============================================================
+# Sistema Operacional
+# ============================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ============================================================
+# Editores e IDEs
+# ============================================================
+
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*.orig
+*.bak
+*.tmp
+
+# ============================================================
+# Logs e arquivos de depuração
+# ============================================================
+
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============================================================
+# Dependências
+# ============================================================
+
+node_modules/
+vendor/
+
+# ============================================================
+# Builds e artefatos
+# ============================================================
+
+dist/
+build/
+out/
+*.min.js.map
+
+# ============================================================
+# Pentest / Red Team — nunca versionar evidências ou payloads
+# ============================================================
+
+payloads/
+loot/
+evidence/
+screenshots/
+*.pcap
+*.pcapng
+*.har
+*.burp
+*.xml.bak
+wordlists/
